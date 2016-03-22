@@ -1,7 +1,10 @@
-package org.p99.scala
-
 object P01 {
 
-  // TODO
+  // I've used the standard functional approach. See pattern machine
+  def getLastElementFromList[A](ls: List[A]) :A = ls match {
+    case h :: Nil => h
+    case _ :: tail => getLastElementFromList(tail)
+  }
+  
 
 }

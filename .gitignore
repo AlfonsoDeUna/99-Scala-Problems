@@ -6,3 +6,7 @@
 *.jar
 *.scalac
 target/
+*.proj
+.metadata/
+.git/
+

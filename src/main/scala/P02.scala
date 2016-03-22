@@ -1,7 +1,12 @@
-package org.p99.scala
+
 
 object P02 {
 
-  // TODO
-
+  // In my first approach I've used again pattern matching
+  // In this case the key was h:: _ ::tail
+  def getPenultimate[A] (l: List[A]): A = l match {
+   case h :: _ :: Nil => h
+    case _ :: tail => getPenultimate(tail)
+  }
+  
 }
